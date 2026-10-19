@@ -1,0 +1,466 @@
+{
+  "_BarcodeScannerButton-BsdqOs3A.js": {
+    "file": "assets/BarcodeScannerButton-BsdqOs3A.js",
+    "name": "BarcodeScannerButton",
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_camera-DWAI_yxx.js",
+      "_barcode-DOa93Pat.js"
+    ]
+  },
+  "_ConfirmModal-k1xd_L2C.js": {
+    "file": "assets/ConfirmModal-k1xd_L2C.js",
+    "name": "ConfirmModal",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_NumericInput-7y0y0kTI.js": {
+    "file": "assets/NumericInput-7y0y0kTI.js",
+    "name": "NumericInput",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_arrow-up-D26Wjv1X.js": {
+    "file": "assets/arrow-up-D26Wjv1X.js",
+    "name": "arrow-up",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_barcode-DOa93Pat.js": {
+    "file": "assets/barcode-DOa93Pat.js",
+    "name": "barcode",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_building-complex-BgnR9EDA.js": {
+    "file": "assets/building-complex-BgnR9EDA.js",
+    "name": "building-complex",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_camera-DWAI_yxx.js": {
+    "file": "assets/camera-DWAI_yxx.js",
+    "name": "camera",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_dollar-sign-8B0Hn2eJ.js": {
+    "file": "assets/dollar-sign-8B0Hn2eJ.js",
+    "name": "dollar-sign",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_download-Cx4C-NBd.js": {
+    "file": "assets/download-Cx4C-NBd.js",
+    "name": "download",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_index-DikAvKax.js": {
+    "file": "assets/index-DikAvKax.js",
+    "name": "index",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_layers-CrqgzJIY.js": {
+    "file": "assets/layers-CrqgzJIY.js",
+    "name": "layers",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_loader-circle-XVICDBC3.js": {
+    "file": "assets/loader-circle-XVICDBC3.js",
+    "name": "loader-circle",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_minus-CR6LWXTL.js": {
+    "file": "assets/minus-CR6LWXTL.js",
+    "name": "minus",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_pen-PCCiPeMl.js": {
+    "file": "assets/pen-PCCiPeMl.js",
+    "name": "pen",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_pencil-DFmPjPDd.js": {
+    "file": "assets/pencil-DFmPjPDd.js",
+    "name": "pencil",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_plus-DSVe5k8V.js": {
+    "file": "assets/plus-DSVe5k8V.js",
+    "name": "plus",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_printer-CTMofFr2.js": {
+    "file": "assets/printer-CTMofFr2.js",
+    "name": "printer",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_receipt-B41jTGeJ.js": {
+    "file": "assets/receipt-B41jTGeJ.js",
+    "name": "receipt",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_refresh-cw-D5wV01a3.js": {
+    "file": "assets/refresh-cw-D5wV01a3.js",
+    "name": "refresh-cw",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_rotate-ccw-clock-BFQa9ytP.js": {
+    "file": "assets/rotate-ccw-clock-BFQa9ytP.js",
+    "name": "rotate-ccw-clock",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_search-CkdUjgp3.js": {
+    "file": "assets/search-CkdUjgp3.js",
+    "name": "search",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_shield-check-BOUGhda0.js": {
+    "file": "assets/shield-check-BOUGhda0.js",
+    "name": "shield-check",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "_trash-DruURSoT.js": {
+    "file": "assets/trash-DruURSoT.js",
+    "name": "trash",
+    "imports": [
+      "resources/ts/src/main.tsx"
+    ]
+  },
+  "node_modules/zxing-wasm/dist/reader/zxing_reader.wasm": {
+    "file": "assets/zxing_reader-BxB2YfIY.wasm",
+    "src": "node_modules/zxing-wasm/dist/reader/zxing_reader.wasm"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-CrAqSIp3.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DMsN-rLE.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/ts/src/components/ActivityLogsView.tsx": {
+    "file": "assets/ActivityLogsView-DR5_LmdB.js",
+    "name": "ActivityLogsView",
+    "src": "resources/ts/src/components/ActivityLogsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_shield-check-BOUGhda0.js",
+      "_search-CkdUjgp3.js"
+    ]
+  },
+  "resources/ts/src/components/BackupView.tsx": {
+    "file": "assets/BackupView-BM_jitdR.js",
+    "name": "BackupView",
+    "src": "resources/ts/src/components/BackupView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_shield-check-BOUGhda0.js",
+      "_loader-circle-XVICDBC3.js",
+      "_download-Cx4C-NBd.js"
+    ]
+  },
+  "resources/ts/src/components/CashRegisterView.tsx": {
+    "file": "assets/CashRegisterView-BOQouVp6.js",
+    "name": "CashRegisterView",
+    "src": "resources/ts/src/components/CashRegisterView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_search-CkdUjgp3.js",
+      "_download-Cx4C-NBd.js",
+      "_printer-CTMofFr2.js"
+    ]
+  },
+  "resources/ts/src/components/CategoriesUnitsView.tsx": {
+    "file": "assets/CategoriesUnitsView-DB7GrZBD.js",
+    "name": "CategoriesUnitsView",
+    "src": "resources/ts/src/components/CategoriesUnitsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_layers-CrqgzJIY.js",
+      "_plus-DSVe5k8V.js",
+      "_pen-PCCiPeMl.js",
+      "_trash-DruURSoT.js"
+    ]
+  },
+  "resources/ts/src/components/CustomersView.tsx": {
+    "file": "assets/CustomersView-Cci2ZKUb.js",
+    "name": "CustomersView",
+    "src": "resources/ts/src/components/CustomersView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_rotate-ccw-clock-BFQa9ytP.js",
+      "_trash-DruURSoT.js",
+      "_plus-DSVe5k8V.js",
+      "_search-CkdUjgp3.js",
+      "_dollar-sign-8B0Hn2eJ.js",
+      "_pen-PCCiPeMl.js"
+    ]
+  },
+  "resources/ts/src/components/DamagedProductsView.tsx": {
+    "file": "assets/DamagedProductsView-CLqrGLZB.js",
+    "name": "DamagedProductsView",
+    "src": "resources/ts/src/components/DamagedProductsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_NumericInput-7y0y0kTI.js",
+      "_search-CkdUjgp3.js",
+      "_refresh-cw-D5wV01a3.js",
+      "_camera-DWAI_yxx.js",
+      "_minus-CR6LWXTL.js",
+      "_plus-DSVe5k8V.js"
+    ]
+  },
+  "resources/ts/src/components/DashboardView.tsx": {
+    "file": "assets/DashboardView-Dwjgr5vL.js",
+    "name": "DashboardView",
+    "src": "resources/ts/src/components/DashboardView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_index-DikAvKax.js",
+      "_building-complex-BgnR9EDA.js",
+      "_receipt-B41jTGeJ.js",
+      "_layers-CrqgzJIY.js",
+      "_shield-check-BOUGhda0.js",
+      "_refresh-cw-D5wV01a3.js",
+      "_dollar-sign-8B0Hn2eJ.js",
+      "_search-CkdUjgp3.js"
+    ]
+  },
+  "resources/ts/src/components/ExpensesView.tsx": {
+    "file": "assets/ExpensesView-O7EtJzSE.js",
+    "name": "ExpensesView",
+    "src": "resources/ts/src/components/ExpensesView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_receipt-B41jTGeJ.js",
+      "_plus-DSVe5k8V.js",
+      "_trash-DruURSoT.js"
+    ]
+  },
+  "resources/ts/src/components/InventoryView.tsx": {
+    "file": "assets/InventoryView-BSep042B.js",
+    "name": "InventoryView",
+    "src": "resources/ts/src/components/InventoryView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_NumericInput-7y0y0kTI.js",
+      "_BarcodeScannerButton-BsdqOs3A.js",
+      "_rotate-ccw-clock-BFQa9ytP.js",
+      "_search-CkdUjgp3.js",
+      "_arrow-up-D26Wjv1X.js",
+      "_camera-DWAI_yxx.js",
+      "_barcode-DOa93Pat.js"
+    ]
+  },
+  "resources/ts/src/components/PosView.tsx": {
+    "file": "assets/PosView-DKrtMI3B.js",
+    "name": "PosView",
+    "src": "resources/ts/src/components/PosView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_printer-CTMofFr2.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_BarcodeScannerButton-BsdqOs3A.js",
+      "_dollar-sign-8B0Hn2eJ.js",
+      "_search-CkdUjgp3.js",
+      "_barcode-DOa93Pat.js",
+      "_minus-CR6LWXTL.js",
+      "_plus-DSVe5k8V.js",
+      "_trash-DruURSoT.js",
+      "_camera-DWAI_yxx.js"
+    ]
+  },
+  "resources/ts/src/components/ProductsView.tsx": {
+    "file": "assets/ProductsView-BDTHPG7G.js",
+    "name": "ProductsView",
+    "src": "resources/ts/src/components/ProductsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_search-CkdUjgp3.js",
+      "_camera-DWAI_yxx.js",
+      "_download-Cx4C-NBd.js",
+      "_plus-DSVe5k8V.js",
+      "_printer-CTMofFr2.js",
+      "_pencil-DFmPjPDd.js",
+      "_trash-DruURSoT.js",
+      "_refresh-cw-D5wV01a3.js",
+      "_minus-CR6LWXTL.js",
+      "_barcode-DOa93Pat.js"
+    ]
+  },
+  "resources/ts/src/components/PurchasesView.tsx": {
+    "file": "assets/PurchasesView-BmmehO1N.js",
+    "name": "PurchasesView",
+    "src": "resources/ts/src/components/PurchasesView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_plus-DSVe5k8V.js",
+      "_pencil-DFmPjPDd.js",
+      "_trash-DruURSoT.js"
+    ]
+  },
+  "resources/ts/src/components/ReportsView.tsx": {
+    "file": "assets/ReportsView-BBuzQm64.js",
+    "name": "ReportsView",
+    "src": "resources/ts/src/components/ReportsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_index-DikAvKax.js",
+      "_search-CkdUjgp3.js",
+      "_loader-circle-XVICDBC3.js",
+      "_arrow-up-D26Wjv1X.js"
+    ]
+  },
+  "resources/ts/src/components/ReturnsView.tsx": {
+    "file": "assets/ReturnsView-g3MqeWA2.js",
+    "name": "ReturnsView",
+    "src": "resources/ts/src/components/ReturnsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_NumericInput-7y0y0kTI.js",
+      "_BarcodeScannerButton-BsdqOs3A.js",
+      "_search-CkdUjgp3.js",
+      "_camera-DWAI_yxx.js",
+      "_barcode-DOa93Pat.js"
+    ]
+  },
+  "resources/ts/src/components/SettingsView.tsx": {
+    "file": "assets/SettingsView-DBXckHda.js",
+    "name": "SettingsView",
+    "src": "resources/ts/src/components/SettingsView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_NumericInput-7y0y0kTI.js"
+    ]
+  },
+  "resources/ts/src/components/SuppliersView.tsx": {
+    "file": "assets/SuppliersView-iSQpQjmh.js",
+    "name": "SuppliersView",
+    "src": "resources/ts/src/components/SuppliersView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_NumericInput-7y0y0kTI.js",
+      "_building-complex-BgnR9EDA.js",
+      "_search-CkdUjgp3.js",
+      "_plus-DSVe5k8V.js",
+      "_pencil-DFmPjPDd.js",
+      "_trash-DruURSoT.js"
+    ]
+  },
+  "resources/ts/src/components/UsersView.tsx": {
+    "file": "assets/UsersView-DV-CNusy.js",
+    "name": "UsersView",
+    "src": "resources/ts/src/components/UsersView.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/ts/src/main.tsx",
+      "_ConfirmModal-k1xd_L2C.js",
+      "_shield-check-BOUGhda0.js",
+      "_plus-DSVe5k8V.js",
+      "_pencil-DFmPjPDd.js",
+      "_trash-DruURSoT.js"
+    ]
+  },
+  "resources/ts/src/main.tsx": {
+    "file": "assets/main-CezXM2gK.js",
+    "name": "main",
+    "src": "resources/ts/src/main.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/ts/src/components/DashboardView.tsx",
+      "resources/ts/src/components/PosView.tsx",
+      "resources/ts/src/components/ProductsView.tsx",
+      "resources/ts/src/components/CategoriesUnitsView.tsx",
+      "resources/ts/src/components/InventoryView.tsx",
+      "resources/ts/src/components/DamagedProductsView.tsx",
+      "resources/ts/src/components/PurchasesView.tsx",
+      "resources/ts/src/components/CustomersView.tsx",
+      "resources/ts/src/components/SuppliersView.tsx",
+      "resources/ts/src/components/ExpensesView.tsx",
+      "resources/ts/src/components/CashRegisterView.tsx",
+      "resources/ts/src/components/ReturnsView.tsx",
+      "resources/ts/src/components/ReportsView.tsx",
+      "resources/ts/src/components/UsersView.tsx",
+      "resources/ts/src/components/SettingsView.tsx",
+      "resources/ts/src/components/BackupView.tsx",
+      "resources/ts/src/components/ActivityLogsView.tsx"
+    ],
+    "css": [
+      "assets/main-CWDkSR5T.css"
+    ],
+    "assets": [
+      "assets/zxing_reader-BxB2YfIY.wasm"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+Options -Indexes
+RewriteEngine On
+
+# Protect Laravel private files and directories
+RewriteRule ^(\.env|\.git|vendor|storage|bootstrap|config|database|resources|routes|tests)(/|$) - [F,NC,L]
+RewriteRule ^(artisan|composer\.(json|lock)|package(-lock)?\.json|phpunit\.xml|vite\.config\.js|tsconfig\.json)(/|$) - [F,NC,L]
+
+# Serve public assets from the Laravel public directory
+RewriteCond %{REQUEST_URI} ^/build/
+RewriteRule ^build/(.*)$ public/build/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^/images/
+RewriteRule ^images/(.*)$ public/images/$1 [L]
+
+RewriteRule ^favicon\.ico$ public/favicon.ico [L]
+RewriteRule ^robots\.txt$ public/robots.txt [L]
+
+# Send all other requests to Laravel's public entry point
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]

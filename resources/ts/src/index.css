@@ -1,0 +1,392 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-slate-750: #253347;
+  --color-slate-850: #141d2e;
+  --color-teal-750: #0d5f57;
+}
+
+:root {
+  --color-primary: #0f766e;
+  --color-primary-hover: #115e59;
+  --color-accent: #0284c7;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #f1f5f9;
+  --color-card: #ffffff;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #0284c7;
+
+  /* Aliases */
+  --primary: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --secondary: #475569;
+  --secondary-hover: #334155;
+  --accent: var(--color-accent);
+  --background: var(--color-background);
+  --surface: var(--color-surface);
+  --surface-elevated: var(--color-surface-elevated);
+  --card: var(--color-card);
+  --border: var(--color-border);
+  --border-subtle: var(--color-border-subtle);
+  --text: var(--color-text);
+  --text-secondary: #334155;
+  --text-muted: var(--color-text-muted);
+  --success: var(--color-success);
+  --warning: var(--color-warning);
+  --danger: var(--color-danger);
+  --info: var(--color-info);
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+}
+
+.login-background {
+  background-color: #f1f5f9;
+  background-image:
+    radial-gradient(ellipse at 50% -15%, rgba(13, 148, 136, 0.16), transparent 58%),
+    radial-gradient(ellipse at 100% 100%, rgba(14, 116, 144, 0.1), transparent 48%),
+    linear-gradient(rgba(15, 118, 110, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 118, 110, 0.045) 1px, transparent 1px);
+  background-size: auto, auto, 38px 38px, 38px 38px;
+  mask-image: linear-gradient(to bottom, #000 25%, rgba(0, 0, 0, 0.55));
+}
+
+.dark {
+  --color-primary: #14b8a6;
+  --color-primary-hover: #0d9488;
+  --color-accent: #38bdf8;
+  --color-background: #0b0f19;
+  --color-surface: #111827;
+  --color-surface-elevated: #1e293b;
+  --color-card: #111827;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-border: #1e293b;
+  --color-border-subtle: #162032;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #38bdf8;
+
+  /* Aliases */
+  --primary: var(--color-primary);
+  --primary-hover: var(--color-primary-hover);
+  --secondary: #64748b;
+  --secondary-hover: #94a3b8;
+  --accent: var(--color-accent);
+  --background: var(--color-background);
+  --surface: var(--color-surface);
+  --surface-elevated: var(--color-surface-elevated);
+  --card: var(--color-card);
+  --border: var(--color-border);
+  --border-subtle: var(--color-border-subtle);
+  --text: var(--color-text);
+  --text-secondary: #cbd5e1;
+  --text-muted: var(--color-text-muted);
+  --success: var(--color-success);
+  --warning: var(--color-warning);
+  --danger: var(--color-danger);
+  --info: var(--color-info);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.dark .login-background {
+  background-color: #070d14;
+  background-image:
+    radial-gradient(ellipse at 50% -15%, rgba(20, 184, 166, 0.2), transparent 58%),
+    radial-gradient(ellipse at 100% 100%, rgba(8, 145, 178, 0.13), transparent 48%),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Noto Sans Arabic', Tahoma, Arial, sans-serif;
+  }
+
+  [dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  }
+
+  /* Accessible touch targets & interactive controls */
+  button, input, select, textarea {
+    font-family: inherit;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
+
+/* Custom sleek high-DPI scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Print stylesheets for High-Definition Thermal & Standard printing */
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-receipt, #printable-receipt *, #cash-register-print, #cash-register-print *, #report-print, #report-print * {
+    visibility: visible;
+  }
+
+  #printable-receipt {
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  #cash-register-print {
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  #report-print {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    overflow: visible;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  #report-print *,
+  #report-print .overflow-hidden,
+  #report-print .overflow-x-auto {
+    overflow: visible !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+  }
+
+  #report-print table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #report-print tr {
+    break-inside: avoid;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Phones: iOS zooms the page when a focused field's text is under 16px */
+@media (max-width: 639px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Phones: data tables become cards. Column titles come from data-label (set by tableCards.ts). */
+@media screen and (max-width: 767px) {
+  table.mobile-cards {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  table.mobile-cards,
+  table.mobile-cards tbody,
+  table.mobile-cards tfoot,
+  table.mobile-cards tr,
+  table.mobile-cards td {
+    display: block;
+  }
+
+  table.mobile-cards thead {
+    display: none;
+  }
+
+  table.mobile-cards tbody,
+  table.mobile-cards tfoot {
+    padding: 0.5rem;
+    border: 0 !important;
+  }
+
+  table.mobile-cards tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0.875rem;
+    margin-bottom: 0.625rem;
+    padding: 0.25rem 0.875rem;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 0.75rem;
+    background: var(--color-card);
+    box-shadow: var(--shadow-sm);
+  }
+
+  table.mobile-cards tr:last-child {
+    margin-bottom: 0;
+  }
+
+  table.mobile-cards td {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.125rem;
+    min-width: 0;
+    padding: 0.5rem 0 !important;
+    border: 0 !important;
+    border-bottom: 1px dashed var(--color-border) !important;
+    text-align: start !important;
+    white-space: normal !important;
+    word-break: break-word;
+  }
+
+  table.mobile-cards td:last-child {
+    border-bottom: 0 !important;
+  }
+
+  table.mobile-cards td::before {
+    content: attr(data-label);
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  /* Cells without a column title (actions, checkboxes, "no data" rows) */
+  table.mobile-cards td:empty {
+    display: none;
+  }
+
+  table.mobile-cards td[data-card="hide"] {
+    display: none;
+  }
+
+  table.mobile-cards td[data-card="title"],
+  table.mobile-cards td[data-card="actions"],
+  table.mobile-cards td[colspan],
+  table.mobile-cards td[data-label=""] {
+    grid-column: 1 / -1;
+  }
+
+  table.mobile-cards td[data-card="actions"]::before {
+    content: none;
+  }
+
+  table.mobile-cards td[data-card="actions"],
+  table.mobile-cards td[data-label=""] {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  table.mobile-cards td[data-label=""]::before {
+    content: none;
+  }
+
+  table.mobile-cards td[colspan] {
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+  }
+
+  /* The first real column (usually the name) is the card title */
+  table.mobile-cards td[data-card="title"] {
+    order: -1;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+  }
+}
+
+/* Laptops/desktops: slightly larger text across the whole app (phones and printing unchanged) */
+@media screen and (min-width: 768px) {
+  :root {
+    --text-xs: 0.875rem;     /* 12px -> 14px */
+    --text-sm: 1rem;         /* 14px -> 16px */
+    --text-base: 1.125rem;   /* 16px -> 18px */
+    --text-lg: 1.25rem;      /* 18px -> 20px */
+    --text-xl: 1.40625rem;   /* 20px -> 22.5px */
+    --text-2xl: 1.6875rem;   /* 24px -> 27px */
+  }
+
+  .text-\[9px\] { font-size: 10.5px; }
+  .text-\[10px\] { font-size: 11.5px; }
+  .text-\[11px\] { font-size: 13px; }
+}
+
+/* Light mode: typed values in every field are black (placeholders stay grey) */
+html:not(.dark) :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea) {
+  color: #000;
+}
